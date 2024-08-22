@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Calulator</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        background-color: #252525;
+       
+        justify-content: center;
+        align-items: center; 
+        color: #f2f2f2;
+    }
+    #box{
+        background: hsl(193, 64%, 53%);
+        overflow: none;
+        padding: 20px;
+        font-size: 30px;
+        border-radius: 20px;
+        box-shadow: 10px 10px 100px   hsla(193, 64%, 53%, 0.49);
+        position: absolute;
+        
+        /* z-index: 15; */
+        top: 50%;
+        left: 50%;
+        margin: -100px 0 0 -150px;
+       
+
+    }
+   #box > button{
+    color: #f2f2f2;
+    border: none;
+    outline: none;
+    background-color: #2525251f;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px; border-radius: 10px;
+   }
+  #box > input{
+   outline: none;
+   border: none;
+   padding: 10px;
+   border-radius: 5px;
+   text-align: center;
+   background-color: #2525255e;
+  }
+  #box > h3{
+    background-color: #f2f2f2;
+    color: #252525;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+  
+  }
+ 
+#box > button:hover{
+ background-color: #21ca1844;
+
+
+}
+</style>
+    
+</head>
+<body>
+       <div id="box">
+         princple  <br>
+    <input type="text" id="p"><br>
+    Time <br>
+    <input type="text" id="t"><br>
+    Rate <br>
+    <input type="text" id="r"><br>
+    <button onclick="calculate()">Calculate</button>
+   <h3 id="ShowValue"></h3>
+
+       </div>
+   
+
+    <script src="calculator.js"></script>
+</body>
+</html>
